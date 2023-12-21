@@ -35,14 +35,14 @@
                 <span></span>
                 Create Post
             </a>
-                <a href="#" id="auth-links">
+                <a href="{% url 'profile' %}" id="auth-links">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
                 Profile
-            </a>
-                <a href="#" id="auth-links">
+            </a>            
+            <a href="{% url 'logout' %}" id="auth-links">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -50,14 +50,14 @@
                 Logout
             </a>
                 {% comment %} {% else %} {% endcomment %}
-              <a href="#" id="auth-links">
+              <a href="{% url 'login' %}" id="auth-links">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
                 Login
             </a>
-            <a href="#" id="auth-links">
+            <a href="{% url 'register' %}" id="auth-links">
                 <span></span>
                 <span></span>
                 <span></span>
